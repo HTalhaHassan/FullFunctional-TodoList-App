@@ -1,38 +1,141 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.Toastify__toast-body {
+  font-size: large;
+}
+html {
+  font-size: 60%;
+}
+
+.main-div {
+  min-height: 100vh;
+  background: #060822;
+  display: flex;
+  justify-content: center;
+}
+.child-div {
+  text-align: center;
+  margin-top: 8rem;
+}
+.child-div figure img {
+  width: 13rem;
+  height: 11rem;
+}
+.child-div figure figcaption {
+  color: #fff;
+  font-size: 2.2rem;
+  padding-top: 2rem;
+}
+.additems{
+  margin-top: 2rem;
+  position: relative;
+}
+.additems .edit-btn{
+  position: absolute;
+  right: 5%;
+  top: 22%;
+}
+.additems .add-btn{
+  color: green;
+  position: absolute;
+  font-size: 3rem;
+  right: 5%;
+  top: 22%;
+}
+input {
+  min-width: 40rem;
+  height: 5rem;
+  padding: 2rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.42857143;
+  color: black;
+  background-color: #fff;
+  background-image: none;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+input:focus{
+  border: 3px solid #ffca21;
+  outline: none;
+}
+.showitems {
+  margin-top: 3rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.eachitem {
+  font-size: 1.3rem;
+  padding: 1.2rem ;
+  border-radius: 0.5rem;
+  margin-bottom: 1.2rem;
+  min-width: 40rem;
+  word-break: break-word;
+  color: black;
+  background: #ffca21;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-transform: capitalize;
+}
+.eachitem:hover{
+  background: white;
+  color: black;
+}
+.notask{
   color: white;
+  font-size: 2.2rem;
+}
+.btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 47px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: #ffca21;
+}
+.btn:hover {
+  text-decoration: none;
+  background: white;
+  color: black;
+}
+.todo-btn {
+  width: 7.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.delete-btn{
+  cursor: pointer;
+  pointer-events: auto;
+  background-image: none;
+  color: red;
+  font-size: 3rem;
+}
+.edit-btn{
+  cursor: pointer;
+  pointer-events: auto;
+  background-image: none;
+  color: green;
+  font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 380px) and (max-device-width: 440px) {
+  html {
+    font-size: 53%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-device-width: 380px) {
+  html {
+    font-size: 47%;
   }
 }
